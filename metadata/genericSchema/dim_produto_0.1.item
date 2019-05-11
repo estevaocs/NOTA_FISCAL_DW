@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_1tGrQHKGEemya86Zjz-hAg" name="dim_produto" comment="connectionComment" label="dim_produto" dataPackage="_Uz6b8XJrEemya86Zjz-hAg" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_Uz6b8XJrEemya86Zjz-hAg" dataManager="_1tGrQHKGEemya86Zjz-hAg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Uz6b8nJrEemya86Zjz-hAg" id="_AhTqIHKGEemya86Zjz-hAg" label="DIM_PRODUTO">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uz6b83JrEemya86Zjz-hAg" name="SK_PRODUTO" id="2139" label="SK_PRODUTO" length="-1" precision="-1" sourceType="INT4" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_Uz6b9HJrEemya86Zjz-hAg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uz6b9XJrEemya86Zjz-hAg" name="COD_PRODUTO" id="2140" label="COD_PRODUTO" length="10" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Uz6b9nJrEemya86Zjz-hAg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uz6b93JrEemya86Zjz-hAg" name="NOME_PRODUTO" id="2141" label="NOME_PRODUTO" length="200" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Uz6b-HJrEemya86Zjz-hAg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uz6b-XJrEemya86Zjz-hAg" name="DTC_INICIO" id="2142" label="DTC_INICIO" length="-1" precision="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Uz6b-nJrEemya86Zjz-hAg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Uz6b-3JrEemya86Zjz-hAg" name="DTC_FIM" id="2143" label="DTC_FIM" length="-1" precision="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_Uz6b_HJrEemya86Zjz-hAg" body=""/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

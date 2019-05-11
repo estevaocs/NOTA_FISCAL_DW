@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Zg32EHM2EemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataPackage="_Zg32EXM2EemgjoHjhX-PBQ" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_Zg32EXM2EemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataManager="_Zg32EHM2EemgjoHjhX-PBQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Zg32EnM2EemgjoHjhX-PBQ" id="_4BZOkHM1EemgjoHjhX-PBQ" label="FATO_VENDA">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32FXM2EemgjoHjhX-PBQ" name="SK_PRODUTO" label="SK_PRODUTO" length="-1" sourceType="INT4" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32FnM2EemgjoHjhX-PBQ" name="SK_VENDEDOR" label="SK_VENDEDOR" length="-1" sourceType="INT4" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32F3M2EemgjoHjhX-PBQ" name="SK_DEPARTAMENTO" label="SK_DEPARTAMENTO" length="-1" sourceType="INT4" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32GHM2EemgjoHjhX-PBQ" name="DTC_VENDA" label="DTC_VENDA" length="-1" sourceType="TIMESTAMP" talendType="id_Date" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32GXM2EemgjoHjhX-PBQ" name="QNT_VENDA" label="QNT_VENDA" length="-1" sourceType="FLOAT4" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32GnM2EemgjoHjhX-PBQ" name="VAL_VENDA" label="VAL_VENDA" length="-1" precision="2" sourceType="FLOAT4" talendType="id_Float"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Zg32FHM2EemgjoHjhX-PBQ" name="NUM_NOTA" label="NUM_NOTA" length="10" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

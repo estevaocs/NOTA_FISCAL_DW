@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_jkpiwHMjEemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataPackage="_jkpiwXMjEemgjoHjhX-PBQ" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_jkpiwXMjEemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataManager="_jkpiwHMjEemgjoHjhX-PBQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_jkpiwnMjEemgjoHjhX-PBQ" id="_9GtdMHMiEemgjoHjhX-PBQ" label="DIM_VENDEDOR">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jkpiw3MjEemgjoHjhX-PBQ" name="SK_VENDEDOR" label="SK_VENDEDOR" length="-1" sourceType="INT4" talendType="id_Integer" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jkpixHMjEemgjoHjhX-PBQ" name="COD_VENDEDOR" label="COD_VENDEDOR" length="10" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_jkpixXMjEemgjoHjhX-PBQ" name="DES_VENDEDOR" label="DES_VENDEDOR" length="200" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

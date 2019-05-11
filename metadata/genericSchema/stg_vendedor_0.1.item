@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_7HsWUHMjEemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataPackage="_7HsWUXMjEemgjoHjhX-PBQ" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_7HsWUXMjEemgjoHjhX-PBQ" name="repository.metadataGenericSchema" dataManager="_7HsWUHMjEemgjoHjhX-PBQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7HsWUnMjEemgjoHjhX-PBQ" id="_0DeFoHMjEemgjoHjhX-PBQ" label="STG_VENDEDOR">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7HsWU3MjEemgjoHjhX-PBQ" name="cod_vendedor" label="cod_vendedor" length="10" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7HsWVHMjEemgjoHjhX-PBQ" name="des_vendedor" label="des_vendedor" length="200" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

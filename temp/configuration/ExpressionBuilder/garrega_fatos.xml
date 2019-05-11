@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="TalendDate.parseDate(&quot;dd-MM-yyyy&quot;,row1.dtc_venda)">
+  <variables name="row1.id_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_vendedor" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_produto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_departamento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Ano_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Mes_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Dia_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.dtc_venda" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.qtd_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.val_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.num_nota" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_cliente" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.nom_cliente" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.nom_vendedor" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_cidade" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.nom_cidade" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Nom_produto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_marca" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Nom_marca" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.nom_departamento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.cod_gerencia" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.nom_gerencia" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Latitude" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.Longitude" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

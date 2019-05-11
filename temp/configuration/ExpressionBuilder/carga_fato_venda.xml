@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(DIM_PRODUTO.SK_PRODUTO==0)?-1:DIM_PRODUTO.SK_PRODUTO">
+  <variables name="STG_VENDA.id_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.cod_vendedor" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.cod_produto" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.cod_departamento" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.Ano_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.Mes_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.Dia_venda" value="null" talendType="id_String" nullable="true"/>
+  <variables name="STG_VENDA.dtc_venda" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="STG_VENDA.qtd_venda" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="STG_VENDA.val_venda" value="null" talendType="id_Float" nullable="true"/>
+  <variables name="STG_VENDA.num_nota" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_PRODUTO.SK_PRODUTO" value="0" talendType="id_Integer"/>
+  <variables name="DIM_PRODUTO.COD_PRODUTO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_PRODUTO.NOME_PRODUTO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_PRODUTO.DTC_INICIO" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="DIM_PRODUTO.DTC_FIM" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="DIM_DEPARTAMENTO.SK_DEPARTAMENTO" value="0" talendType="id_Integer"/>
+  <variables name="DIM_DEPARTAMENTO.COD_DEPARTAMENTO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_DEPARTAMENTO.DES_DEPARTAMENTO" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_DEPARTAMENTO.DTC_INICIO" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="DIM_DEPARTAMENTO.DTC_FIM" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="DIM_VENDEDOR.SK_VENDEDOR" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="DIM_VENDEDOR.COD_VENDEDOR" value="null" talendType="id_String" nullable="true"/>
+  <variables name="DIM_VENDEDOR.DES_VENDEDOR" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_JzBpwHJdEemya86Zjz-hAg" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_JzBpwXJdEemya86Zjz-hAg" comment="" name="banco_dados_Password" prompt="banco_dados_Password?" promptNeeded="false" type="id_Password" value="cUk1ImUw/uU="/>
+  <contextParameter xmi:id="_JzBpwnJdEemya86Zjz-hAg" comment="" name="banco_dados_Login" prompt="banco_dados_Login?" promptNeeded="false" type="id_String" value="bi"/>
+  <contextParameter xmi:id="_JzBpw3JdEemya86Zjz-hAg" comment="" name="banco_dados_Server" prompt="banco_dados_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_JzBpxHJdEemya86Zjz-hAg" comment="" name="banco_dados_Database" prompt="banco_dados_Database?" promptNeeded="false" type="id_String" value="demonstracaoDw"/>
+  <contextParameter xmi:id="_JzBpxXJdEemya86Zjz-hAg" comment="" name="banco_dados_Schema" prompt="banco_dados_Schema?" promptNeeded="false" type="id_String" value="public"/>
+  <contextParameter xmi:id="_JzBpxnJdEemya86Zjz-hAg" comment="" name="banco_dados_Port" prompt="banco_dados_Port?" promptNeeded="false" type="id_String" value="5432"/>
+</talendfile:ContextType>

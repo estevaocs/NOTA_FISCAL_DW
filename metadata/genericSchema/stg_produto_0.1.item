@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_0WFtsGzjEembJ5wn3Q9jPA" name="repository.metadataGenericSchema" dataPackage="_0WFtsWzjEembJ5wn3Q9jPA" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_0WFtsWzjEembJ5wn3Q9jPA" name="repository.metadataGenericSchema" dataManager="_0WFtsGzjEembJ5wn3Q9jPA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0WFtsmzjEembJ5wn3Q9jPA" id="_Zjyv4GzjEembJ5wn3Q9jPA" label="STG_PRODUTO">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0WFts2zjEembJ5wn3Q9jPA" name="cod_produto" label="cod_produto" length="10" sourceType="" talendType="id_String" key="true"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0WFttGzjEembJ5wn3Q9jPA" name="nom_produto" label="nom_produto" length="200" talendType="id_String"/>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

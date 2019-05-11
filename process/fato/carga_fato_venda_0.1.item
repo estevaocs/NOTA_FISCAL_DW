@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="banco_dados_Password" prompt="banco_dados_Password?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_Password" value="cUk1ImUw/uU="/>
+    <contextParameter comment="" name="banco_dados_Login" prompt="banco_dados_Login?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_String" value="bi"/>
+    <contextParameter comment="" name="banco_dados_Server" prompt="banco_dados_Server?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="banco_dados_Database" prompt="banco_dados_Database?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_String" value="demonstracaoDw"/>
+    <contextParameter comment="" name="banco_dados_Schema" prompt="banco_dados_Schema?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_String" value="public"/>
+    <contextParameter comment="" name="banco_dados_Port" prompt="banco_dados_Port?" promptNeeded="false" repositoryContextId="_JyoBIHJdEemya86Zjz-hAg" type="id_String" value="5432"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="68" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Users/User Grupo ITSS/Documents/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_6yZmsGwbEemV46vvrgJ4kg" name="DataOperation"/>
+    <routinesParameter id="_8ONdYGwbEemV46vvrgJ4kg" name="Mathematical"/>
+    <routinesParameter id="_8O6oAGwbEemV46vvrgJ4kg" name="Numeric"/>
+    <routinesParameter id="_8PLGsGwbEemV46vvrgJ4kg" name="Relational"/>
+    <routinesParameter id="_8PaXQGwbEemV46vvrgJ4kg" name="StringHandling"/>
+    <routinesParameter id="_8P3qQGwbEemV46vvrgJ4kg" name="TalendDataGenerator"/>
+    <routinesParameter id="_8QhKgGwbEemV46vvrgJ4kg" name="TalendDate"/>
+    <routinesParameter id="_8Ry84GwbEemV46vvrgJ4kg" name="TalendStringUtil"/>
+    <routinesParameter id="_8RQKUGwbEemV46vvrgJ4kg" name="TalendString"/>
+  </parameters>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TXk0EHJbEemya86Zjz-hAg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.banco_dados_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.banco_dados_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.banco_dados_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.banco_dados_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.banco_dados_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufJYOehpS1+WvcgCqHyb1ArlNrVOdF8xS8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;STG_VENDAS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;id_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;cod_vendedor\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;cod_produto\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;cod_departamento\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;Ano_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;Mes_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;Dia_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;dtc_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;qtd_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;val_venda\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;.\&quot;num_nota\&quot;&#xA;FROM \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;STG_VENDAS\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="id_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cod_vendedor"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cod_produto"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cod_departamento"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ano_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mes_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Dia_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtc_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="qtd_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="val_venda"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_nota"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="STG_VENDA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Busca os dados da tabela STG_VENDA"/>
+    <metadata connector="FLOW" label="STG_VENDAS" name="tDBInput_1">
+      <column comment="" key="true" length="10" name="id_venda" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cod_vendedor" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cod_produto" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="cod_departamento" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="Ano_venda" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Mes_venda" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="Dia_venda" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dtc_venda" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtd_venda" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="val_venda" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="num_nota" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_WH52gHMzEemgjoHjhX-PBQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="JOIN"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Faz os joins das tabelas dimensões"/>
+    <metadata connector="FLOW" label="SAIDA_AGREGATE" name="SAIDA_AGREGATE">
+      <column comment="" key="false" length="-1" name="SK_PRODUTO" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SK_DEPARTAMENTO" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SK_VENDEDOR" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="qtd_venda" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="val_venda" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="dtc_venda" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="SAIDA_AGREGATE">
+        <mapperTableEntries name="SK_PRODUTO" expression="(DIM_PRODUTO.SK_PRODUTO==0)?-1:DIM_PRODUTO.SK_PRODUTO " type="id_Integer"/>
+        <mapperTableEntries name="SK_DEPARTAMENTO" expression="(DIM_DEPARTAMENTO.SK_DEPARTAMENTO==0)?-1:DIM_DEPARTAMENTO.SK_DEPARTAMENTO " type="id_Integer"/>
+        <mapperTableEntries name="SK_VENDEDOR" expression="(DIM_VENDEDOR.SK_VENDEDOR==0)?-1:DIM_VENDEDOR.SK_VENDEDOR " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="qtd_venda" expression="STG_VENDA.qtd_venda " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="val_venda" expression="STG_VENDA.val_venda" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="dtc_venda" expression="STG_VENDA.dtc_venda " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="STG_VENDA" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="id_venda" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cod_vendedor" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cod_produto" type="id_String" nullable="true"/>
+        <mapperTableEntries name="cod_departamento" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Ano_venda" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Mes_venda" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Dia_venda" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dtc_venda" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="qtd_venda" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="val_venda" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="num_nota" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="DIM_PRODUTO" minimized="true" expressionFilter="(STG_VENDA.dtc_venda.after(DIM_PRODUTO.DTC_INICIO) || STG_VENDA.dtc_venda.equals(DIM_PRODUTO.DTC_INICIO))  &amp;&amp; (STG_VENDA.dtc_venda.before((DIM_PRODUTO.DTC_FIM==null)? TalendDate.parseDate(&quot;dd-MM-yyyy&quot;, &quot;31-12-2050&quot;):DIM_PRODUTO.DTC_FIM))" activateExpressionFilter="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_PRODUTO" type="id_Integer"/>
+        <mapperTableEntries name="COD_PRODUTO" expression="STG_VENDA.cod_produto" type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="NOME_PRODUTO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTC_INICIO" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DTC_FIM" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="DIM_DEPARTAMENTO" minimized="true" expressionFilter="(STG_VENDA.dtc_venda.after(DIM_DEPARTAMENTO.DTC_INICIO) || STG_VENDA.dtc_venda.equals(DIM_DEPARTAMENTO.DTC_INICIO))  &amp;&amp; (STG_VENDA.dtc_venda.before((DIM_DEPARTAMENTO.DTC_FIM==null)? TalendDate.parseDate(&quot;dd-MM-yyyy&quot;, &quot;31-12-2050&quot;):DIM_DEPARTAMENTO.DTC_FIM))" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_DEPARTAMENTO" type="id_Integer"/>
+        <mapperTableEntries name="COD_DEPARTAMENTO" expression="STG_VENDA.cod_departamento " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DES_DEPARTAMENTO" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DTC_INICIO" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="DTC_FIM" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="DIM_VENDEDOR" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="SK_VENDEDOR" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="COD_VENDEDOR" expression="STG_VENDA.cod_vendedor " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DES_VENDEDOR" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TXk0EHJbEemya86Zjz-hAg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.banco_dados_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.banco_dados_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.banco_dados_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.banco_dados_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.banco_dados_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufJYOehpS1+WvcgCqHyb1ArlNrVOdF8xS8="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_1sMFQHKGEemya86Zjz-hAg - DIM_PRODUTO" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_PRODUTO&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;.\&quot;SK_PRODUTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;.\&quot;COD_PRODUTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;.\&quot;NOME_PRODUTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;.\&quot;DTC_INICIO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;.\&quot;DTC_FIM\&quot;&#xA;FROM \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_PRODUTO\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_PRODUTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_PRODUTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOME_PRODUTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTC_INICIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTC_FIM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="DIM_PRODUTO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Busca os dados da tabela DIM_PRODUTO"/>
+    <metadata connector="FLOW" label="DIM_PRODUTO" name="tDBInput_2">
+      <column comment="" key="true" length="-1" name="SK_PRODUTO" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_PRODUTO" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="NOME_PRODUTO" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DTC_INICIO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DTC_FIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TXk0EHJbEemya86Zjz-hAg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.banco_dados_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.banco_dados_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.banco_dados_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.banco_dados_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.banco_dados_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufJYOehpS1+WvcgCqHyb1ArlNrVOdF8xS8="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Uz5N0HJrEemya86Zjz-hAg - DIM_DEPARTAMENTO" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_DEPARTAMENTO&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;.\&quot;SK_DEPARTAMENTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;.\&quot;COD_DEPARTAMENTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;.\&quot;DES_DEPARTAMENTO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;.\&quot;DTC_INICIO\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;.\&quot;DTC_FIM\&quot;&#xA;FROM \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_DEPARTAMENTO\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_DEPARTAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_DEPARTAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DES_DEPARTAMENTO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTC_INICIO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTC_FIM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="DIM_DEPARTAMENTO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Busca os dados da tabela DIM_DEPARTAMENTO"/>
+    <metadata connector="FLOW" label="DIM_DEPARTAMENTO" name="tDBInput_3">
+      <column comment="" key="true" length="-1" name="SK_DEPARTAMENTO" nullable="false" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_DEPARTAMENTO" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DES_DEPARTAMENTO" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DTC_INICIO" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DTC_FIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TXk0EHJbEemya86Zjz-hAg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.banco_dados_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.banco_dados_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.banco_dados_Database"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.banco_dados_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.banco_dados_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufJYOehpS1+WvcgCqHyb1ArlNrVOdF8xS8="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_jkkqQHMjEemgjoHjhX-PBQ - DIM_VENDEDOR" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DIM_VENDEDOR&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_VENDEDOR\&quot;.\&quot;SK_VENDEDOR\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_VENDEDOR\&quot;.\&quot;COD_VENDEDOR\&quot;, &#xA;  \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_VENDEDOR\&quot;.\&quot;DES_VENDEDOR\&quot;&#xA;FROM \&quot;&quot;+context.banco_dados_Database+&quot;\&quot;.\&quot;&quot;+context.banco_dados_Schema+&quot;\&quot;.\&quot;DIM_VENDEDOR\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_VENDEDOR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COD_VENDEDOR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DES_VENDEDOR"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="DIM_VENDEDOR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Busca os dados da tabela DIM_VENDEDOR"/>
+    <metadata connector="FLOW" label="DIM_VENDEDOR" name="tDBInput_4">
+      <column comment="" key="true" length="-1" name="SK_VENDEDOR" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="COD_VENDEDOR" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="DES_VENDEDOR" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_1" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="SK_PRODUTO"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SK_PRODUTO"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="SK_VENDEDOR"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SK_VENDEDOR"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="SK_DEPARTAMENTO"/>
+      <elementValue elementRef="INPUT_COLUMN" value="SK_DEPARTAMENTO"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="DTC_VENDA"/>
+      <elementValue elementRef="INPUT_COLUMN" value="dtc_venda"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="QNT_VENDA"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="qtd_venda"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="VAL_VENDA"/>
+      <elementValue elementRef="FUNCTION" value="sum"/>
+      <elementValue elementRef="INPUT_COLUMN" value="val_venda"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="AGREGAÇÃO"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Irá fazer a soma das métricas"/>
+    <metadata connector="FLOW" label="FATO_VENDA" name="tAggregateRow_1">
+      <column comment="" key="true" length="-1" name="SK_PRODUTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_VENDEDOR" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_DEPARTAMENTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DTC_VENDA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QNT_VENDA" nullable="true" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAL_VENDA" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_TXk0EHJbEemya86Zjz-hAg" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="context.banco_dados_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.banco_dados_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.banco_dados_Database"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.banco_dados_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.banco_dados_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufJYOehpS1+WvcgCqHyb1ArlNrVOdF8xS8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;FATO_VENDA&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="1000000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_PRODUTO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_VENDEDOR"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_DEPARTAMENTO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DTC_VENDA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QNT_VENDA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VAL_VENDA"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="FATO_VENDA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Alimenta a tabela FATO_VENDA"/>
+    <metadata connector="FLOW" label="FATO_VENDA" name="tDBOutput_1">
+      <column comment="" key="true" length="-1" name="SK_PRODUTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_VENDEDOR" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_DEPARTAMENTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DTC_VENDA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QNT_VENDA" nullable="true" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAL_VENDA" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="FATO_VENDA" name="REJECT">
+      <column comment="" key="true" length="-1" name="SK_PRODUTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_VENDEDOR" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="SK_DEPARTAMENTO" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="DTC_VENDA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QNT_VENDA" nullable="true" pattern="" precision="0" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VAL_VENDA" nullable="true" pattern="" precision="2" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="STG_VENDA" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="STG_VENDA" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="SAIDA_AGREGATE" lineStyle="0" metaname="SAIDA_AGREGATE" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tAggregateRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SK_DEPARTAMENTO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SK_VENDEDOR"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="dtc_venda"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SAIDA_AGREGATE" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DIM_PRODUTO" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DIM_PRODUTO" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DIM_DEPARTAMENTO" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DIM_DEPARTAMENTO" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="DIM_VENDEDOR" lineStyle="8" metaname="tDBInput_4" offsetLabelX="50" offsetLabelY="9" source="tDBInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="DIM_VENDEDOR" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="SAIDA_VENDAS" lineStyle="0" metaname="tAggregateRow_1" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_1" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="SAIDA_VENDAS" show="false"/>
+  </connection>
+  <note opaque="true" posX="256" posY="-32" sizeHeight="64" sizeWidth="320" text="JOB DA CARGA DA TABELA FATO DE VENDAS">
+    <elementParameter field="COLOR" name="NOTE_COLOR" value="184;151;192"/>
+    <elementParameter field="TEXT" name="NOTE_FONT" value="Arial"/>
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+    <elementParameter field="COLOR" name="NOTE_LINECOLOR" value="228;179;229"/>
+  </note>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_Z15vIHJrEemya86Zjz-hAg" comment="connectionComment" label="connectionLabel" dataPackage="_Z15vIXJrEemya86Zjz-hAg" mappingTypeUsed="true" mappingTypeId="postgres_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_Z15vIXJrEemya86Zjz-hAg" dataManager="_Z15vIHJrEemya86Zjz-hAg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Z15vInJrEemya86Zjz-hAg" id="_EuKsIHKGEemya86Zjz-hAg" label="STG_DEPARTAMENTO">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z15vJXJrEemya86Zjz-hAg" name="COD_DEPARTAMENTO" id="2140" label="COD_DEPARTAMENTO" length="10" precision="-1" sourceType="VARCHAR" talendType="id_String" key="true" nullable="false">
+        <initialValue xmi:id="_Z15vJnJrEemya86Zjz-hAg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z15vJ3JrEemya86Zjz-hAg" name="DES_DEPARTAMENTO" id="2141" label="DES_DEPARTAMENTO" length="200" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_Z15vKHJrEemya86Zjz-hAg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
